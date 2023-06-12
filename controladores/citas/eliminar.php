@@ -1,17 +1,16 @@
 <?php
-require '../../modelos/Clinica.php';
+require '../../modelos/Cita.php';
 
 
     try {
-        $clinica = new Clinica($_GET);
-        $resultado = $clinica->eliminar();
+        $cita = new Cita($_GET);
+        $resultado = $cita->eliminar();
 
     } catch (PDOException $e) {
         $error = $e->getMessage();
     } catch (Exception $e2){
         $error = $e2->getMessage();
     }
-
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -19,8 +18,7 @@ require '../../modelos/Clinica.php';
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"  rel="stylesheet" 
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Resultados</title>
 </head>
 <body>
@@ -41,7 +39,7 @@ require '../../modelos/Clinica.php';
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/Final_miron/controladores/clinicas/buscar.php" class="btn btn-info">Regresar al formulario</a>
+                <a href="/Final_miron/controladores/citas/buscar.php" class="btn btn-info">Regresar al formulario</a>
             </div>
         </div>
     </div>
