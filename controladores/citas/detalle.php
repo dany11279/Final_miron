@@ -56,7 +56,7 @@ try {
                             <td><?= $key + 1 ?></td>
                             <td><?= $producto['PAC_NOM'] ?></td>
                             <td><?= $producto['PAC_DPI'] ?></td>
-                            <td><?= $producto['PAC_TELEFONO'] ?></td>
+                            <td><?= $producto['PAC_TEL'] ?></td>
                             <td><?= $producto['CITA_HORA'] ?></td>
                             <td><?= $producto['CITA_REFERENCIA'] ?></td>
                         </tr>
