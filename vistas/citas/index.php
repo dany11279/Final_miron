@@ -37,7 +37,7 @@ require_once '../../modelos/Medico.php';
                     <div class="col">
                         <label for="cita_med">Medico asignado</label>
                         <select name="cita_med" id="cita_med" class="form-control">
-                            <option value="">SELECCIONE...</option>
+                            <option value="">SELECCIONE</option>
                             <?php foreach ($medicos as $key => $medico) : ?>
                                 <option value="<?= $medico['MED_ID'] ?>"><?= $medico['MED_NOM'] ?></option>
                             <?php endforeach?>
