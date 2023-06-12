@@ -41,7 +41,8 @@ require '../../modelos/Paciente.php';
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/Final_miron/controladores/pacientes/buscar.php" class="btn btn-info">Regresar al formulario</a>
+                
+                <a href="/Final_miron/controladores/pacientes/buscar.php" class="btn btn-info">REGRESAR AL FORMULARIO</a>
             </div>
         </div>
     </div>
