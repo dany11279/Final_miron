@@ -3,7 +3,7 @@ require '../../modelos/Clinica.php';
 
 
     try {
-        $clinica = new Clinica($_GET);
+        $clinica = new cli($_GET);
         $resultado = $clinica->eliminar();
 
     } catch (PDOException $e) {
@@ -41,7 +41,7 @@ require '../../modelos/Clinica.php';
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/Final_miron/controladores/clinicas/buscar.php" class="btn btn-info">Regresar al formulario</a>
+                <a href="/Final_miron/controladores/clinicas/buscar.php" class="btn btn-info">REGRESAR AL FORMULARIO</a>
             </div>
         </div>
     </div>
