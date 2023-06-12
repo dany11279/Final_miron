@@ -1,6 +1,6 @@
 <?php
 
-
+require '../../modelos/Paciente.php';
 
 if($_POST['pac_nom'] != '' && $_POST['pac_dpi']  != '' && $_POST['pac_tel']  != '' && $_POST['pac_id'] != ''){
 

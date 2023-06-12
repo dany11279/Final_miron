@@ -1,22 +1,21 @@
 <?php
 require '../../modelos/Medico.php';
-    try {
-        $medico = new medico($_GET);
 
-        $medicos = $medico->buscar();
-       
-    } catch (PDOException $e) {
-        $error = $e->getMessage();
-    } catch (Exception $e2){
-        $error = $e2->getMessage();
+try {
+    if(isset($_GET['paciente_id']) && $_GET['paciente_id'] != ''){
+
+        $pac_id = $_GET['pac_id'];
+        $paciente = new Paciente(["pac_id" => $paciente_id]);
+        $pacientes = $paciente->buscar();}
     }
+
 ?>
 <?php include_once '../../includes/header.php'?>
     <div class="container">
-        <h1 class="text-center">Modificar pacientes</h1>
+        <h1 class="text-center">Modificar medico</h1>
         <div class="row justify-content-center">
             <form action="/Final_miron/controladores/medicos/modificar.php" method="POST" class="col-lg-8 border bg-light p-3">
-                <input type="hidden" name="med_id">
+            <input type="hidden" name="pac_id" value="<?= $pacientes[0]['PAC_ID'] ?>">
                 <div class="row mb-3">
                     <div class="col">
                         <label for="med_nom">nombre del medico</label>
