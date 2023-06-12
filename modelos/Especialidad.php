@@ -6,6 +6,7 @@ class Especialidad extends Conexion{
     public $esp_nom;
     public $esp_situacion;
 
+    
     public function __construct($args = [] )
     {
         $this->esp_id = $args['esp_id'] ?? null;
