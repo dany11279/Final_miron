@@ -6,6 +6,7 @@
             <form action="/Final_miron/controladores/clinicas/guardar.php" method="POST" class="col-lg-8 border bg-light p-3">
                 <div class="row mb-3">
                     <div class="col">
+                        
                     <label for="cli_nom">nombre de la clinica</label>
                         <input type="text" name="cli_nom" id="cli_nom" class="form-control">
                     </div>
