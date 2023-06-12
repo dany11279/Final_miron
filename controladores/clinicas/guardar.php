@@ -3,9 +3,8 @@ require '../../modelos/Clinica.php';
 
 
 if($_POST['cli_nom'] != ''){
-
     try {
-        $clinica = new Clinica($_POST);
+        $clinica = new cli($_POST);
         $resultado = $clinica->guardar();
         $error = "NO se guardó correctamente";
     } catch (PDOException $e) {
@@ -46,7 +45,7 @@ if($_POST['cli_nom'] != ''){
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/Final_miron/vistas/clinicas/index.php" class="btn btn-info">Regresar al formulario</a>
+                <a href="/Final_miron/vistas/clinicas/index.php" class="btn btn-info">REGRESAR AL FORMULARIO</a>
             </div>
         </div>
     </div>
