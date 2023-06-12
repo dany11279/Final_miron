@@ -5,7 +5,7 @@ error_reporting(E_ALL);
 require '../../modelos/Cita.php';
 require '../../modelos/Detalle.php';
 require '../../modelos/Medico.php';
-require '../../modelos/Pac.php';
+require '../../modelos/Paciente.php';
 
 
 
@@ -38,7 +38,7 @@ try {
                             <th colspan="6"><center>CITAS PARA EL DIA DE HOY (<?= date('d/m/Y' , strtotime( $citas[0]['CITA_FECHA'])) ?>)</center></th>
                         </tr>
                         <tr>
-                            <td colspan="6">CLINICA DE <?= $medicos[0]['MEDICO_CLI'] ?> (<?= $citas[0]['CITA_MED'] ?>) 
+                            <td colspan="6">CLINICA DE <?= $medicos[0]['MED_CLI'] ?> (<?= $citas[0]['CITA_MED'] ?>) 
                         </td>
                         </tr>
                         <tr>

@@ -26,17 +26,17 @@ require_once '../../modelos/Medico.php';
                     <div class="col">
                         <label for="cita_pac">Nombre del paciente</label>
                         <select name="cita_pac" id="cita_pac" class="form-control">
-                            <option value="">SELECCIONE...</option>
+                            <option value="">SELECCIONE</option>
                             <?php foreach ($pacientes as $key => $paciente) : ?>
-                                <option value="<?= $paciente['PACIENTE_ID'] ?>"><?= $paciente['PACIENTE_NOMBRE'] ?></option>
+                                <option value="<?= $paciente['PAC_ID'] ?>"><?= $paciente['PAC_NOM'] ?></option>
                             <?php endforeach?>
                         </select>
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col">
-                        <label for="cita_medico">Medico asignado</label>
-                        <select name="cita_medico" id="cita_medico" class="form-control">
+                        <label for="cita_med">Medico asignado</label>
+                        <select name="cita_med" id="cita_med" class="form-control">
                             <option value="">SELECCIONE...</option>
                             <?php foreach ($medicos as $key => $medico) : ?>
                                 <option value="<?= $medico['MED_ID'] ?>"><?= $medico['MED_NOM'] ?></option>

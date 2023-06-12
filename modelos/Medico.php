@@ -54,7 +54,7 @@ class medico extends Conexion{
     }
 
     public function eliminar(){
-        $sql = "UPDATE medicos SET medico_situacion = 0 where medico_id = $this->medico_id";
+        $sql = "UPDATE medicos SET med_situacion = 0 where med_id = $this->med_id";
         
         $resultado = self::ejecutar($sql);
         return $resultado;

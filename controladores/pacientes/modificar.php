@@ -45,7 +45,7 @@ if($_POST['pac_nom'] != '' && $_POST['pac_dpi']  != '' && $_POST['pac_tel']  != 
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/Final_miron/controladores/pacientes/buscar.php?paciente_nombre=<?= $_POST['pac_nom'] ?>" class="btn btn-info">Regresar al formulario</a>
+                <a href="/Final_miron/controladores/pacientes/buscar.php?pac_nom=<?= $_POST['pac_nom'] ?>" class="btn btn-info">Regresar al formulario</a>
             </div>
         </div>
     </div>

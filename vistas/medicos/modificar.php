@@ -16,7 +16,7 @@ require '../../modelos/Medico.php';
         <h1 class="text-center">Modificar pacientes</h1>
         <div class="row justify-content-center">
             <form action="/Final_miron/controladores/medicos/guardar.php" method="POST" class="col-lg-8 border bg-light p-3">
-                <input type="hidden" name="medico_id">
+                <input type="hidden" name="med_id">
                 <div class="row mb-3">
                     <div class="col">
                         <label for="med_nom">nombre del medico</label>

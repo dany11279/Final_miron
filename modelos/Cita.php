@@ -32,7 +32,8 @@ class Cita extends Conexion{
             return $resultado;
         }    
     public function guardar(){
-        $sql = "INSERT INTO citas(cita_pac, cita_med, cita_fecha, cita_hora, cita_referencia) values('$this->cita_pac','$this->cita_med','$this->cita_fecha','$this->cita_hora','$this->cita_referencia')";
+        $sql = "INSERT INTO citas(cita_pac, cita_med, cita_fecha, cita_hora, cita_referencia) 
+        values('$this->cita_pac','$this->cita_med','$this->cita_fecha','$this->cita_hora','$this->cita_referencia')";
         $resultado = self::ejecutar($sql);
         return $resultado;
     }
@@ -75,7 +76,7 @@ class Cita extends Conexion{
         
 
         $sql = " SELECT * FROM citas  inner join pacientes on pac_id = cita_pac 
-        inner join medicos on medico_id = cita_med inner join clinicas on cli_id = med_cli ";
+        inner join medicos on med_id = cita_med inner join clinicas on cli_id = med_cli ";
 
 
         $resultado = self::servir($sql);
