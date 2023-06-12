@@ -5,7 +5,7 @@ require '../../modelos/Medico.php';
 if($_POST['med_nom'] != '' && $_POST['med_esp']  != '' && $_POST['med_cli']  != '' && $_POST['med_id'] != ''){
 
     try {
-        $medico = new Medico($_POST);
+        $medico = new medico($_POST);
         $resultado = $medico->modificar();
 
     } catch (PDOException $e) {
@@ -46,7 +46,7 @@ if($_POST['med_nom'] != '' && $_POST['med_esp']  != '' && $_POST['med_cli']  != 
         </div>
         <div class="row">
             <div class="col-lg-4">
-                <a href="/Final_miron/controladores/medicos/buscar.php?med_nom=<?= $_POST['med_nom'] ?>" class="btn btn-info">Regresar al formulario</a>
+                <a href="/Final_miron/controladores/medicos/buscar.php?med_nom=<?= $_POST['med_nom'] ?>" class="btn btn-info">REGRESAR AL FORMULARIO</a>
             </div>
         </div>
     </div>
