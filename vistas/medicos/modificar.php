@@ -3,15 +3,11 @@ require '../../modelos/Medico.php';
 require '../../modelos/Especialidad.php';
 require '../../modelos/Clinica.php';
 
-
     try { if(isset($_GET['med_id']) && $_GET['med_id'] != ''){
-    
         $med_id = $_GET['med_id'];
         $medico = new Medico(["med_id" => $med_id]);
         $especialidad = new Especialidad($_GET);
         $clinica = new cli($_GET);
-
-
         $medicos = $medico->buscar();
         $especialidades = $especialidad->buscar();
         $clinicas = $clinica->buscar();
