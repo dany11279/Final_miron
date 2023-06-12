@@ -1,9 +1,10 @@
-<nav class="navbar navbar-dark navbar-expand-lg bg-dark">
+<nav class="navbar navbar-dark navbar-expand-lg bg-danger">
     <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" 
+        <button class="navbar-toggler btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" 
         aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a class="navbar-brand" href="#">Hospital La Esperanza</a>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -82,3 +83,13 @@
         </div>
     </div>
 </nav>
+
+
+<style>
+    .navbar-brand {
+        font-family: "Your Font Name", sans-serif;
+    }
+    .navbar-nav .nav-link {
+        font-family: "Your Font Name", sans-serif;
+    }
+</style>
