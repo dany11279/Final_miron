@@ -63,6 +63,47 @@ try {
                         <?php endforeach ?>
                         </tbody>
                         </table>
+
+
+      <?php if (!empty($busqueda)): ?>
+    <?php $clinicaActual = ''; $medicoActual = ''; ?>
+    <?php foreach ($busqueda as $key => $fila) : ?>
+        <?php if ($clinicaActual != $fila['CLI_NOM'] || $medicoActual != $fila['MED_NOM']): ?>
+            <?php if ($key > 0): ?>
+                </tbody>
+                </table>
+            <?php endif; ?>
+            <table class="table table-bordered">
+              
+            </table>
+        <?php endif; ?>
+        <!-- Filas de datos de la tabla -->
+        <?php $clinicaActual = $fila['CLI_NOM']; $medicoActual = $fila['MED_NOM']; ?>
+    <?php endforeach ?>
+    </tbody>
+    </table>
+<?php else: ?>
+    <table class="table table-bordered">
+        <thead>
+            <tr class="text-center table-dark">
+                <th colspan="6">HOSPITAL "LA ESPERANZA" CITAS</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="text-center table-dark">
+                <td colspan="6"><center>CITAS PARA EL DÍA DE HOY (<?= $fecha ?>)</center></td>
+            </tr>
+            <tr>
+                <td colspan="6"><center>NO HAY CITAS PARA EL DIA DE HOY</center></td>
+            </tr>
+        </tbody>
+    </table>
+<?php endif ?>
+
+
+
+
+
                     <?php else: ?>
                         <tr>
                             <td colspan="6"><center>SIN CITAS</center></td>

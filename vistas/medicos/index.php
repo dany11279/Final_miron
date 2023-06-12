@@ -1,18 +1,19 @@
 <?php
 require_once '../../modelos/Especialidad.php';
 require_once '../../modelos/Clinica.php';
+
     try {
         $especialidad = new Especialidad();
-        $clinica = new Clinica();
+        $clinica = new cli();
         $especialidades = $especialidad->buscar();
         $clinicas = $clinica->buscar();
-       
     } catch (PDOException $e) {
         $error = $e->getMessage();
     } catch (Exception $e2){
         $error = $e2->getMessage();
     }
 ?>
+
 <?php include_once '../../includes/header.php'?>
 <?php include_once '../../includes/navbar.php'?>
     <div class="container">
