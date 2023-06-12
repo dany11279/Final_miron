@@ -16,6 +16,7 @@ class medico extends Conexion{
         $this->med_esp = $args['med_esp'] ?? '';
         $this->med_cli = $args['med_cli'] ?? '';
         $this->med_situacion = $args['med_situacion'] ?? '';
+        
     }
 
     public function guardar(){
