@@ -43,6 +43,7 @@ require_once '../../modelos/Medico.php';
                             <?php endforeach?>
                         </select>
                     </div>
+                    
                 </div>
                 <div class="row mb-3">
                     <div class="col">
