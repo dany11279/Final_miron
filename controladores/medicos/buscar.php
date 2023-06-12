@@ -1,11 +1,12 @@
 <?php
+
 require '../../modelos/Medico.php';
 require_once '../../modelos/Especialidad.php';
 require_once '../../modelos/Clinica.php';
 try {
     $medico = new Medico($_GET);
     $especialidad = new Especialidad();
-    $clinica = new Clinica();
+    $clinica = new cli();
     $medicos = $medico->buscar();
     $especialidades = $especialidad->buscar();
     $clinicas = $clinica->buscar();
@@ -67,7 +68,7 @@ try {
         </div>
         <div class="row justify-content-center">
             <div class="col-lg-4">
-                <a href="/Final_miron/vistas/medicos/buscar.php" class="btn btn-info w-100">Regresar a la busqueda</a>
+                <a href="/Final_miron/vistas/medicos/buscar.php" class="btn btn-info w-100">REGRESAR AL FORMULARIO</a>
             </div>
         </div>
     </div>
