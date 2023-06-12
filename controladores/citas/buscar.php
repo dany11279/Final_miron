@@ -27,7 +27,8 @@ try {
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <title>Resultados de búsqueda</title>
 </head>
 <body>
@@ -66,7 +67,7 @@ try {
                                     <td><?= $cita['CITA_HORA'] ?></td>
                                     <td><?= $cita['CITA_REFERENCIA'] ?></td>
                                     <td><a class="btn btn-warning w-100" href="/Final_miron/vistas/citas/detalle.php?cita_fecha=<?= $cita['CITA_FECHA'] ?>">VER DETALLE</a></td>
-                                    <td><a class="btn btn-danger w-100" href="/Final_miron/controladores/citas/eliminar.php?cita_id=<?= $cita['CITA_ID'] ?>">Eliminar</a></td>
+                                    <td><a class="btn btn-danger w-100" href="/Final_miron/controladores/citas/eliminar.php?cita_id=<?= $cita['CITA_ID'] ?>">ELIMINAR</a></td>
                                 </tr>
                             <?php endforeach ?>
                         <?php else : ?>
@@ -81,7 +82,7 @@ try {
         <div class="row justify-content-center">
             <div class="col-lg-4">
                 <a href="/Final_miron/vistas/citas/detalle.php" class="btn btn-info w-100">VER LAS CITAS DE HOY</a><br><br>
-                <a href="/Final_miron/vistas/citas/buscar.php" class="btn btn-info w-100">Regresar a la búsqueda</a>
+                <a href="/Final_miron/vistas/citas/buscar.php" class="btn btn-info w-100">REGRESAR A LA BUSQUEDA</a>
             </div>
         </div>
     </div>
