@@ -6,7 +6,7 @@
             <form action="/Final_miron/controladores/especialidades/buscar.php" method="GET" class="col-lg-8 border bg-light p-3">
                 <div class="row mb-3">
                     <div class="col">
-                        <label for="esp_nom">especialidad</label>
+                        <label for="esp_nom">Especialidades</label>
                         <input type="text" name="esp_nom" id="esp_nom" class="form-control">
                     </div>
                 </div>
